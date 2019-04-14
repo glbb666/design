@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="dist/css/swiper.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        .swiper-container {
+            width:80%;
+            height: 100%;
+            float: left;
+            margin-left: 20%;
+        }
+        .swiper-wrapper{
+            width: 100%;
+            height: 100%;
+            float: left;
+           
+        }
+        .swiper-pagination{
+            position: fixed;
+            padding-top:10%;
+            left:0px;
+            /* top:20%; */
+            /* height: 100%; */
+            /* width: 300px; */
+            width: 20%;
+            z-index: 1;
+            /* background-color:rgba(255,255,255,0.4); */
+            background-color: rgba(252, 239, 232, 0.4);
+            background: url(./image/meihua.png);
+        }
+        .swiper-pagination-bullet{
+            /* width: 300px; */
+            width: 100%;
+            height: 80px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            color:#000;
+            opacity: 1;
+            background: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .swiper-pagination-bullet:nth-child(1){
+            background: url(./image/zhou.png) no-repeat 0px 12px;
+        }
+        .swiper-pagination-bullet:nth-child(2){
+            background: url(./image/qin.png) no-repeat 0px 12px;
+        }
+        .swiper-pagination-bullet:nth-child(3){
+            background: url(./image/han.png) no-repeat 0px 12px;
+        }
+        .swiper-pagination-bullet:nth-child(4){
+            background: url(./image/tang.png) no-repeat 0px 12px;
+        }
+        .swiper-pagination-bullet:nth-child(5){
+            background: url(./image/song.png) no-repeat 0px 12px;
+        }
+        .swiper-pagination-bullet:nth-child(6){
+            background: url(./image/ming.png) no-repeat 0px 12px;
+        }
+        .swiper-pagination .swiper-pagination-bullet-active{
+            /* color:#fff; */
+            /* background: #007aff; */
+            /* background-color:rgba(255,255,255,0.8); */
+            background-color: rgba(252, 239, 232, 0.8);
+           
+        }
+        .swiper-pagination .swiper-pagination-bullet:hover {
+            /* background-color:rgba(255,255,255,0.8); */
+            background-color: rgba(252, 239, 232, 0.8);
+            cursor: pointer;
+        }
+    </style> 
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="icon" href="./image/favicon.ico" type="image/x-icon" /> 
+    <title>踏梦长安</title>
+</head>
+<body>
+    <script src="dist/js/swiper.min.js"></script>
+    <img src="./image/tamengchangan.jpg" alt="" id="tamengchangan">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="zhou">
+                <div class="main">
+                    <div class="top">
+                        <img src="./image/fenghuotai.PNG" alt="">
+                        <img src="./image/shangzhou.PNG" alt="">
+                        <img src="./image/fht1.png" alt="">
+                        <img src="./image/fht2.png" alt="">
+                        <img src="./image/fht3.png" alt="">
+                        <img src="./image/fht4.png" alt="">
+                    </div>
+                    <div class="bottom"></div>
+                </div>
+            </div>
+            <div class="swiper-slide" id="qin">
+                <div class="main">
+                    <div class="top">
+                        <img src="./image/bingmayong.PNG" alt="">
+                        <img src="./image/qindai.PNG" alt="">
+                        <img src="./image/bmy1.png" alt="">
+                        <img src="./image/bmy2.png" alt="">
+                        <img src="./image/bmy3.png" alt="">
+                        <img src="./image/bmy4.png" alt="">
+                    </div>
+                    <div class="bottom"></div>
+                </div>
+            </div>
+            <div class="swiper-slide" id="han">
+                <div class="main">
+                    <div class="top">
+                            <img src="./image/diwangling.PNG" alt="">
+                            <img src="./image/handai.PNG" alt="">
+                            <img src="./image/dwl1.png" alt="">
+                            <img src="./image/dwl2.png" alt="">
+                            <img src="./image/dwl3.png" alt="">
+                            <img src="./image/dwl4.png" alt="">
+                    </div>
+                    <div class="bottom"></div>
+                </div>
+            </div>
+            <div class="swiper-slide" id="tang">
+                    <div class="main">
+                            <div class="top">
+                                <img src="./image/datangfurongyuan.PNG" alt="">
+                                <img src="./image/tangdai.PNG" alt="">
+                                <img src="./image/dtfry1.PNG" alt="">
+                                <img src="./image/dtfry2.PNG" alt="">
+                                <img src="./image/dtfry3.PNG" alt="">
+                                <img src="./image/dtfry4.PNG" alt="">
+                            </div>
+                            <div class="bottom"></div>
+                    </div>
+            </div>
+            <div class="swiper-slide" id="song">
+                    <div class="main">
+                            <div class="top">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                            </div>
+                            <div class="bottom"></div>
+                    </div>
+            </div>
+            <div class="swiper-slide" id="ming">
+                    <div class="main">
+                            <div class="top">
+                                    <img src="./image/guchengqiang.PNG" alt="">
+                                    <img src="./image/mingchao.PNG" alt="">
+                                    <img src="./image/gcq1.png" alt="">
+                                    <img src="./image/gcq2.png" alt="">
+                                    <img src="./image/gcq3.png" alt="">
+                                    <img src="./image/gcq4.png" alt="">
+                            </div>
+                            </div>
+                            <div class="bottom"></div>
+                    </div>
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+            <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1">
+            </span>
+            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
+            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span>
+            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span>
+        </div>
+        <!-- 如果需要导航按钮 -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+        
+        <!-- 如果需要滚动条 -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+    <script>        
+        var mySwiper = new Swiper ('.swiper-container', {
+          direction: 'vertical', // 垂直切换选项
+          loop: true, // 循环模式选项
+          
+          // 如果需要分页器
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + '</span>';
+            },
+          },
+          
+          // 如果需要前进后退按钮
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          
+          // 如果需要滚动条
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          }
+        })        
+        </script>
+</body>
+<script src="./js/index.js"></script>
+</html>
