@@ -1,190 +1,36 @@
 
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>按钮动画</title>
-
+<!doctype html>  
+<html>  
+<head>    
+<title>HTML5 Canvas爱心飘动动画特效</title>
+<meta charset="UTF-8">    
 <style>
-/* transition conf */
-/* colors */
-/* btn conf */
-* {
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
-body {
-  background: #fcfcfc;
-}
-
-#btn-grp {
-  max-width: 768px;
-  margin: auto;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  text-align: center;
-  margin-bottom: 25px;
-  color: #7f8c8d;
-}
-
-p {
-  color: #7f8c8d;
-}
-
-.col-half {
-  display: inline-block;
-  width: 50%;
-  margin-right: -3px;
-  text-align: center;
-}
-
-.btn {
-  margin: 25px auto;
-  position: relative;
-  font-size: 25px;
-  color: #fff;
-  padding: 20px;
-  width: 200px;
-  overflow: hidden;
-  text-align: center;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-.btn:nth-of-type(1) {
-  background-color: #2ecc71;
-}
-.btn:nth-of-type(2) {
-  background-color: #3498db;
-}
-.btn:nth-of-type(3) {
-  background-color: #e74c3c;
-}
-.btn:nth-of-type(4) {
-  background-color: #1abc9c;
-}
-.btn.left:after {
-  left: 0;
-}
-.btn.right:after {
-  right: 0;
-}
-.btn.wave:after {
-  content: "";
-  background: #fff;
-  display: block;
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: -5%;
-  border-radius: 50px;
-  margin-left: -30%;
-  opacity: 0;
-  transition: all 0.75s ease-in-out;
-}
-.btn.wave.right:after {
-  content: "";
-  background: #fff;
-  display: block;
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: -5%;
-  border-radius: 50px;
-  margin-right: -30%;
-  opacity: 0;
-  transition: all 0.75s ease-in-out;
-}
-.btn.wave:active:after {
-  width: 0px;
-  opacity: 1;
-  transition: 0s;
-}
-.btn.stroke:after {
-  content: "";
-  background: #fff;
-  display: block;
-  position: absolute;
-  width: 200%;
-  height: 100%;
-  top: 0;
-  opacity: 0;
-  transition: all 0.75s ease-in-out;
-}
-.btn.stroke:active:after {
-  width: 0px;
-  opacity: 1;
-  transition: 0s;
-}
-.btn.half-stroke:after {
-  content: "";
-  background: #fff;
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0;
-  transition: all 0.75s ease-in-out;
-}
-.btn.half-stroke:active:after {
-  width: 0px;
-  opacity: 1;
-  transition: 0s;
-}
-.btn.bubble:after {
-  content: "";
-  background: #fff;
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  opacity: 0;
-  margin: auto;
-  border-radius: 50%;
-  transform: scale(1);
-  transition: all 0.75s ease-in-out;
-}
-.btn.bubble:active:after {
-  transform: scale(0);
-  opacity: 1;
-  transition: 0s;
-}
+  img{
+    position: absolute;
+    top:50%;
+    left: 50%
+  }
 </style>
-</head>
+</head>    
 <body>
-
-<h2>扁平化按钮点击动画</h2>
-
-<div id="btn-grp">
-  <div class="col-half">
-    <h4> 动画：左，右两个方向 </h4>
-    <p>水波动画</p>
-    <div class="btn wave left">Click</div>
-    <p>缓慢的笔刷动画</p>
-    <div class="btn half-stroke left">Click</div>
-    <p>正常的笔刷动画 </p>
-    <div class="btn stroke left">Click</div>
-    <p>气泡动画</p>
-    <div class="btn bubble left">Click</div>
-  </div>
-  <div class="col-half">
-    <h4> 动画：右，左两个方向</h4>
-    <p>水波动画</p>
-    <div class="btn wave right">Click</div>
-    <p>缓慢的笔刷动画</p>
-    <div class="btn half-stroke right">Click</div>
-    <p>正常的笔刷动画</p>
-    <div class="btn stroke right">Click</div>
-  </div>
-</div>
-
-</body>
+    <img src="./image/bingmayong.PNG" alt="">
+<canvas id="c">
+   
+</canvas>    
+<script>    
+	var b = document.body;
+	var c = document.getElementsByTagName('canvas')[0];
+	var a = c.getContext('2d');
+</script>
+<script>
+eval('var M=Math,n=M.pow,i,E=2,F="rgba(233,61,109,",d=M.cos,z=M.sin,L=1,u=30,W=window,w=c.width=W.innerWidth,h=c.height=W.innerHeight,r=_1){return M.random()*2-1},y="px Arial",v="",q="❀",X=w/2,Y=h/2,T=4,p=_1){var e=this;e.g=_1){e.x=X;e.y=Y;e.k=0;e.l=0;e.t=M.random()*19000;e.c=e.t};e.d=_1){a.fillStyle=F+(e.c/e.t)+")";a.fillText(q,e.x,e.y);e.c-=50;e.x+=e.k;e.y+=e.l;e.k=e.k+r();e.l=e.l+r();if(e.c<0||e.x>w||e.x<0||e.y>h||e.y<0){e.g()}};e.g()},A,B;a.textAlign="center";a.strokeStyle="#000";a.lineWidth=2;for(i=0;i<350;i++){M[i]=new p()}setInterval(_1){a.clearRect(0,0,w,h);a.font=u+y;X=(w/6*n(z(T),3)+w/2);Y=0.8*(-h/40*(13*d(T)-5*d(2*T)-2*d(3*T)-d(4*T))+h/2.3);T+=(z(T)+3)/99;for(i=0;i<350;i++){with(M[i]){A=(x/w-0.5)*2,B=-(y/h-0.5);if(L&&(A*A+2*n((B-0.5*n(M.abs(A),0.5)),2))>0.11){k=l=0}d()}}a.font=120+y;if(E>0.1){if(E<1){a.fillStyle=F+E+")";a.fillText("",w/2,h/2)}E-=0.02}a.fillStyle="#E93D6D";a.fillText(v,X,Y+u);a.strokeText(v,X,Y+u)},50);b.bgColor="#FFEFF2";c.onmouseup=_1){L=(L)?0:1}'.replace(/(_1)/g,'function('))
+</script>
+ <script>
+   	var c = document.getElementsByTagName('canvas')[0];
+    c.onclick = function(){
+      c.style.opacity = "0";
+      document.body.background = '';
+    }
+ </script>
+</body> 
 </html>
