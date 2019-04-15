@@ -286,7 +286,7 @@ button.swiper-pagination-bullet {
   appearance: none;
 }
 .swiper-pagination-clickable .swiper-pagination-bullet {
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
