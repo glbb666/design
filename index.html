@@ -2,6 +2,41 @@
 <html>
 <head>
     <meta charset="utf8">
+    <style type="text/css">  
+        .box {  
+            width: 200px;  
+            height: 200px;  
+            position: relative;  
+        }  
+        .box1,.box2 {  
+            width: 200px;  
+            height: 200px;  
+            position: absolute;  
+            top: 0;  
+            left: 0;  
+            text-align: center;  
+            line-height: 200px;   
+            font-size: 50px;  
+            backface-visibility: hidden;  
+            background: red;  
+            transition: all 3s;  
+        }  
+        .box1 {  
+            /* background: red; */
+            background:url();
+            transform: rotateY(-180deg);  
+        }  
+        .box2 {  
+            background: blue; 
+        }  
+        #box2 {  
+            transform: rotateY(180deg);  
+        }  
+        #box1 {  
+            transform: rotateY(0deg);  
+        }    
+    </style>
+    <link rel="stylesheet" href="css/demo.css">
 
     <link rel="stylesheet" href="dist/css/swiper.css">
 
@@ -30,9 +65,92 @@
                 });
         </script>
         <script src="dist/js/swiper.min.js"></script>
-    <img src="./image/tamengchangan.png" alt="" id="tamengchangan" class="rotation">
+       
     <div class="swiper-container">
         <div class="swiper-wrapper">
+                <div class="swiper-slide " id="shou">
+                        <div class="main">  
+                            <div class="top">
+                                <img src="./image/cxs.png" alt="">
+                                    <!-- <img src="./image/cfdy.PNG" alt="">
+                                    <img src="./image/yrkj.PNG" alt=""> -->
+                                    <!-- <img src="./image/title.PNG" alt=""> -->
+                            </div>
+                            <div class="bottom">
+                                   <!-- <img src="./image/history.PNG" alt=""> -->
+                                   <div class="wrapper">
+                                   <div class="cols">
+                                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                                            <div class="container">
+                                                <div class="front" style="background-image: url(./image/czd.webp);">
+                                                    <div class="inner">
+                                                        <p>城之大</p>
+                                          <span>THE SIZE OF CITY</span>
+                                                    </div>
+                                                </div>
+                                                <div class="back">
+                                                    <div class="inner">
+                                                      <p>山河千里国，</br>
+                                                            &nbsp;&nbsp;城阙九重门</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                                            <div class="container">
+                                                <div class="front" style="background-image:url(image/rzd.webp);">
+                                                    <div class="inner">
+                                                        <p>人之多</p>
+                                          <span>PEOPLE ARE SO MANY</span>
+                                                    </div>
+                                                </div>
+                                                <div class="back">
+                                                    <div class="inner">
+                                                        <p>九天阊阖开宫殿，</br>
+                                                            &nbsp;&nbsp;万国衣冠拜冕旒</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div>
+                                  <div class="cols">
+                                          <div class="col" ontouchstart="this.classList.toggle('hover');">
+                                              <div class="container">
+                                                  <div class="front" style="background-image: url(./image/szs.webp);">
+                                                      <div class="inner">
+                                                          <p>食之盛</p>
+                                            <span>FOOD IS SO DELICIOUS</span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="back">
+                                                      <div class="inner">
+                                                        <p>胡麻饼样学京都，</br>
+                                                        &nbsp;&nbsp;面脆油香新出炉</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col" ontouchstart="this.classList.toggle('hover');">
+                                              <div class="container">
+                                                  <div class="front" style="background-image:url(image/szf.jpg);">
+                                                      <div class="inner">
+                                                          <p>市之繁</p>
+                                            <span>CITY IS SO RICH</span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="back">
+                                                      <div class="inner">
+                                                          <p>落花踏尽游何处，</br>
+                                                            &nbsp;&nbsp;笑入胡姬酒肆中</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                    </div>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>
             <div class="swiper-slide " id="zhou">
                 <div class="main">
                     <div class="top">
@@ -43,7 +161,10 @@
                         <img src="./image/fht3.png" alt="">
                         <img src="./image/fht4.png" alt="">
                     </div>
-                    <div class="bottom"></div>
+                    <div class="bottom">
+                            <img src="./image/fhxzh.jpg" alt="">
+                            <img src="./image/fhxzhtxt.PNG" alt="">
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide" id="qin">
@@ -56,7 +177,8 @@
                         <img src="./image/bmy3.png" alt="">
                         <img src="./image/bmy4.png" alt="">
                     </div>
-                    <div class="bottom"></div>
+                    <div class="bottom">
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide" id="han">
@@ -69,7 +191,12 @@
                             <img src="./image/dwl3.png" alt="">
                             <img src="./image/dwl4.png" alt="">
                     </div>
-                    <div class="bottom"></div>
+                    <div class="bottom">
+                            <div class="box">  
+                                    <div class="box1">ccc</div>  
+                                    <div class="box2">BBBB</div>  
+                            </div>
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide" id="tang">
@@ -82,7 +209,67 @@
                                 <img src="./image/dtfry3.PNG" alt="">
                                 <img src="./image/dtfry4.PNG" alt="">
                             </div>
-                            <div class="bottom"></div>
+                            <div class="bottom">
+                                <a href="#" title="
+                                ">
+                                    <span></span>
+                                    <h6>
+                                        <div>
+                                            <h5>胡饼</h5>
+                                            胡饼就是面粉和羊肉加上椒和豆豉做成的饼，再用酥油浇灌，放入炉火中烤，顿时香气四溢，人们排队争相购买。
+                                        </div>  
+                                    </h6>
+                                </a>
+                                 <a href="#">
+                                     <span></span>
+                                 </a>
+                                 <a href="#" title="
+                                 ">
+                                     <span></span>
+                                     <h6>
+                                            <div>
+                                                <h5>炙羊肉</h5>
+                                                炙羊肉在当时是很普遍的一种吃食。
+                                            </div>  
+                                    </h6>
+                                 </a>
+                                 <a href="#" >
+                                     <span></span>
+                                 </a>
+                                 <a href="#">
+                                     <span></span>
+                                     <h6>
+                                            <div>
+                                                <h5>酪樱桃</h5>
+                                                除了主食以外，唐朝人也喜欢吃甜点，酪樱桃就是他们喜欢的甜点之一。它由新鲜的樱桃浇上奶酪和蔗浆制作而成.
+                                            </div>  
+                                    </h6>
+                                 </a>
+                                 <a href="#">
+                                     <span></span>
+                                 </a> 
+                                 <a href="#">
+                                     <span></span>
+                                     <h6>
+                                            <div>
+                                                <h5>烧尾宴</h5>
+                                                烧尾宴是流行于唐代长安最为奢靡的美食宴，盛行于唐中宗景龙至唐玄宗开元年间。
+                                            </div>  
+                                    </h6>
+                                 </a>
+                                 <a href="#" >
+                                     <span></span>
+                                 </a> 
+                                 <a href="#">
+                                        <span></span>
+                                        <h6>
+                                                <div>
+                                                    <h5>烤羊肉</h5>
+                                                    唐代曾一度禁食牛肉，猪肉供应量少，羊肉独领风骚，成为长安城最为风行的肉类食品。
+                                                </div>  
+                                        </h6>
+                                 </a> 
+                            </div>
                     </div>
             </div>
             <div class="swiper-slide" id="song">
@@ -109,7 +296,9 @@
                                     <img src="./image/gcq4.png" alt="">
                             </div>
             
-                            <div class="bottom"></div>
+                            <div class="bottom">
+                                   
+                            </div>
                     </div>
             </div>
         </div>
@@ -122,6 +311,7 @@
             <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
             <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span>
             <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span>
+            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span>
         </div>
         <!-- 如果需要导航按钮 -->
         <!-- <div class="swiper-button-prev"></div>
@@ -158,16 +348,18 @@
             slideChangeTransitionStart: function(){
                 var list = document.getElementsByClassName('swiper-pagination-bullet');
                 var swiper = document.getElementsByClassName('swiper-slide');
-                var arr = ['slideDown','slideLeft','fadeIn','zoomer','bounceIn','rotateIn','slideDown','slideLeft'];
-                var arr2 = ['slideUp','slideRight','fadeIn','zoomer','bounceIn','rotateIn','slideDown','slideRight'];
+                var arr = ['slideDown','slideRight','slideDown','zoomer','bounceIn','rotateIn','slideDown','slideLeft','slideRight'];
+                var arr2 = ['slideUp','slideLeft','slideUp','zoomer','bounceIn','rotateIn','slideDown','slideRight','slideLeft'];
                 var div = swiper[this.activeIndex].getElementsByTagName('div');
                 var number = this.activeIndex;
-                div[1].classList.add(arr[number]);
-                div[2].classList.add(arr2[number]);
-                var timer = setTimeout(function(){
-                    div[1].classList.remove(arr[number]);
-                    div[2].classList.remove(arr2[number]);
-                },1000);
+                if(number!=0){
+                    div[1].classList.add(arr[number]);
+                    div[2].classList.add(arr2[number]);
+                    var timer = setTimeout(function(){
+                        div[1].classList.remove(arr[number]);
+                        div[2].classList.remove(arr2[number]);
+                    },1000);
+                }
             },
             slideChangeTransitionEnd: function(){
                 // var list = document.getElementsByClassName('swiper-pagination-bullet');
@@ -359,6 +551,26 @@
             });      
         
         </script>
+        <script type="text/javascript">  
+            $(".box").mouseenter(function(){  
+             if($(".box1").attr("id") == undefined || $(".box1").attr("id") === ""){  
+                    $(".box1").attr("id","box1");  
+                }
+                if($(".box2").attr("id") == undefined || $(".box2").attr("id") === "box1"){  
+                    $(".box2").attr("id","box2");  
+                }
+              });
+            $(".box").mouseleave(function(){ 
+               if($(".box1").attr("id") === "box1") {  
+                    $(".box1").attr("id","");  
+                }  
+                if($(".box2").attr("id") === "box2") {  
+                    $(".box2").attr("id","box1");  
+                }  
+              });
+        </script>  
 </body>
 <script src="./js/index.js"></script>
+<script src="js/jquery-1.2.6.min.js"></script>
+<script src="./js/demo.js"></script>
 </html>
