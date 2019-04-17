@@ -7,7 +7,7 @@
  
 .playbox a img{max-width:380px;_width:expression(this.width > 380 ? "380px" : this.width);/*使ie6支持max-width*/ border:none; }
 
-.playbox .txt{position: absolute;left: 0;bottom: 0;width: 100%;height: 45px;line-height: 45px;text-align: center;color: #fff;background: rgba(0,0,0,0.6);}
+.playbox .txt{position: absolute;left: 0;bottom: 0;width: 100%;padding:0 10%;height: 45px;line-height: 45px;text-align: center;color: #fff;background: rgba(252, 239, 232, 0.8);}
 .playbox .txt h3{font-weight: normal; margin:0px}
 .playbox .txt p{
 	font-size: 14px;

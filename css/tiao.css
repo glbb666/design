@@ -1,0 +1,28 @@
+#jin .container{
+	margin:0px auto;
+	width:430px;
+	position:relative;
+	font-size: 30px;
+}
+#jin .container p{
+	text-align:center;
+	padding:10px auto;
+}
+/*下面两个是核心样式*/
+#jin .beat-char {
+    line-height: 3.4em;
+    position: relative;
+	display: inline-block;
+	background: transparent;
+
+}
+
+#jin .rotate{
+	transform:rotate(360deg) ;
+	-ms-transform:rotate(360deg); 	/* IE 9 */
+	-moz-transform:rotate(360deg); 	/* Firefox */
+	-webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+	-o-transform:rotate(360deg);
+	-webkit-transition-duration: 0.7s;
+
+}

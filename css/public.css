@@ -1,0 +1,11 @@
+
+#qin h1,#qin h2,#qin h3,#qin h4,#qin h5,#qin h6,#qin ol,#qin li,#qin ul,#qin p,#qin dl,#qin dt,#qin dd{padding: 0;margin:0}
+#qin ul,#qin ol,#qin li,#qin dl,#qin dt,#qin dd{text-decoration: none;list-style: none}
+#qin .lf{float: left}
+#qin .rt{float: right}
+#qin .clear{clear:both}
+#qin .ovh{overflow: hidden}
+#qin a{  color:#303030;  text-decoration:none;  }
+#qin a:hover{  text-decoration:none;  }
+#qin input{border:none;outline:none;}
+#qin img{border:none}

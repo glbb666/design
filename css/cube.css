@@ -54,8 +54,8 @@
 	box-shadow: 0 0 0.5rem #fff, 
 				0 0 1.5rem var(--border-color),
                 0 0 3rem var(--border-color);
-    width: 500px;
-    height: 400px;            
+    width: 30rem;
+    height: 30rem;            
 }
 
 .image-buttons {
