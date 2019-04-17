@@ -478,8 +478,8 @@ rollerRight
 	animation-name: rollerRight;
 	-webkit-animation-name: rollerRight;	
 
-	animation-duration: 2s;	
-	-webkit-animation-duration: 2s;
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
 
 	animation-timing-function: ease;	
 	-webkit-animation-timing-function: ease;
@@ -522,8 +522,8 @@ rollerLeft
 	animation-name: rollerLeft;
 	-webkit-animation-name: rollerLeft;	
 
-	animation-duration: 2s;	
-	-webkit-animation-duration: 2s;
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
 
 	animation-timing-function: ease;	
 	-webkit-animation-timing-function: ease;

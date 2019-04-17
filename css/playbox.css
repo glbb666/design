@@ -1,0 +1,24 @@
+.playbox {margin:0;padding:0;list-style-type:none;}
+.playbox a,img{border:0;}
+.playbox{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+
+.playbox{width:840px;margin:0px auto;overflow:hidden;padding:20px 0px 0px 20px;}
+.playbox a{ height:313px; overflow:hidden; display:block; float:left; margin-right:20px;margin-bottom:20px; position:relative; text-decoration:none;}
+ 
+.playbox a img{max-width:380px;_width:expression(this.width > 380 ? "380px" : this.width);/*使ie6支持max-width*/ border:none; }
+
+.playbox .txt{position: absolute;left: 0;bottom: 0;width: 100%;height: 45px;line-height: 45px;text-align: center;color: #fff;background: rgba(0,0,0,0.6);}
+.playbox .txt h3{font-weight: normal; margin:0px}
+.playbox .txt p{
+	font-size: 14px;
+	display: block;
+	line-height: 20px;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-moz-margin-before: 1em;
+	-moz-margin-after: 1em;
+	-moz-margin-start: 0px;
+	-moz-margin-end: 0px;
+}
